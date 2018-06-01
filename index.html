@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Page Title</title>
+    <script src="./web3.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+     <script src="./code.js"></script> 
+
+     
+    <script>
+        
+        function abc() {
+           
+            var instance;
+            $.get("http://localhost:3000/a", function (response) {
+                console.log("successfully received the response ")
+                instance = response;
+                console.log("response is "+instance)
+                console.log(instance)
+            console.log("******")
+                
+            })
+              
+        }
+
+        window.onload = abc;
+    </script>
+</head>
+
+<body onload="abc()">
+
+<h1>hello world page is started</h1>
+
+</body>
+
+</html>
